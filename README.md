@@ -1,16 +1,17 @@
 # IFS Portal List Draw Tool
 Every first Saturday of the month I used to manually draw the portals others have found in IITC to decode the passcode. This time, I wrote a program that does that for me.
 
-Template:
+## Template:
 https://docs.google.com/document/d/1oh49z2-5CZFWRPleh06D7kamsWlYlQgtsE_DvUqu5iE/edit?usp=sharing
+
 to edit select: File -> make a copy
 
-usage:
+## usage:
 once data has been added select: File -> Download -> Plain Text (.txt)
 then:
 list_to_draw_tools.pl < your_file.txt
 
-what you get:
+## what you get:
 ```
 ############################
 ### Symbol 2 is a letter ###
@@ -24,3 +25,9 @@ Structure: *-_*----
 The first block contains the symbol number and the class you gave it. Classes can be letter, number or keyword. Each is drawn in its own color. Unknown classes are drawn in the default color. Then there is your guess.
 The structure of the data describes where the gaps are. `*----` is a complete set. `*--_*---` is a set with a gap of one portal in the middle. You get the idea.
 Then there is one big line of JSON data. just copy and paste it einto draw tools. The start of each polyline gats a colored marker. The color changes from green to blue so you can spot the order of the polyline segments.
+
+## Example Pictures
+an this is how it looks like in IITC:
+
+![Image of an R](https://raw.githubusercontent.com/qorron/IFS-Portal-List-Draw-Tool/main/images/R.png)
+![Image of a 6](https://raw.githubusercontent.com/qorron/IFS-Portal-List-Draw-Tool/main/images/6.png)
