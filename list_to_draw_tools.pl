@@ -12,6 +12,24 @@ use JSON;
 # Template:
 # https://docs.google.com/document/d/1oh49z2-5CZFWRPleh06D7kamsWlYlQgtsE_DvUqu5iE/edit?usp=sharing
 # to edit select: File -> make a copy
+# 
+# usage:
+# once data has been added select: File -> Download -> Plain Text (.txt)
+# then:
+# list_to_draw_tools.pl < your_file.txt
+#
+# what you get:
+# ############################
+# ### Symbol 2 is a letter ###
+# ############################
+# It's a Bird…It's a Plane?
+# Structure: *-_*----
+# 
+# [ .. json .. ]
+
+
+
+
 
 my $elements = [];
 my $additional_elements = [];
